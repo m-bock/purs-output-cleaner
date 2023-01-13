@@ -2,5 +2,4 @@
 
 DIR=`dirname $(readlink -f $0)`
 
-node --loader ts-node/esm --experimental-specifier-resolution=node --no-warnings \
-  $DIR/../src/index.ts $@
+ts-node-esm $DIR/../src/index.ts $@
