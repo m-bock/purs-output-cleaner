@@ -15,10 +15,18 @@ yarn global add https://github.com/thought2/purs-output-cleaner
 
 ## Usage
 
+### As CLI
+
 Inside a spago project folder:
 
-```
+```text
 purs-output-cleaner
 ```
 
-Should work :)
+### In the IDE
+
+Configure "Build Command" in the settings of the PureScript language extension:
+
+`spago build --before purs-output-cleaner --purs-args --json-errors`
+
+(Tested in vscode only)
